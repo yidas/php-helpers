@@ -6,6 +6,7 @@ namespace yidas\helpers;
  * ASCII Helper
  *
  * @author  Nick Tsai <myintaer@gmail.com>
+ * @version 1.0.0
  */
 class ASCII
 {
