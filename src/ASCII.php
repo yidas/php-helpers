@@ -16,7 +16,7 @@ class ASCII
      * @param string $string
      * @return string Decoded string
      */
-    public static function stringDecode($string)
+    public static function decodeString($string)
     {
         $length = strlen($string);
 
