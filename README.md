@@ -1,2 +1,4 @@
-# php-helpers
-Alpha - Test for PSR-4
+*PHP* Helpers
+=============
+
+Collection of useful helpers for PHP
