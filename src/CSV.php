@@ -1,5 +1,7 @@
 <?php
 
+namespace yidas\helpers;
+
 /**
  * CSV Helper
  *
