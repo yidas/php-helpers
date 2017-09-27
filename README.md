@@ -7,10 +7,10 @@ Collection of useful helpers for PHP
 HELPERS
 -------
 
-- **[ASCII](#route)**   
+- **ASCII**   
   ASCII decoder.
 
-- **[ArrayHelper](#routejs)**  
+- **ArrayHelper**  
   Array data helper.
   
 - **CSV**  
