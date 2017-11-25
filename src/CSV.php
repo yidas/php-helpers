@@ -13,10 +13,11 @@ namespace yidas\helpers;
  *       ['id'=>'1', 'name'=>'Nick,Tsai'],
  *       ['id'=>'2', 'name'=>'John"M"'],
  *       ];
- *   foreach ($rows as $key => $row) {
- *       CSV::row($row);
- *   }
- *   CSV::output('My file');
+ *   // Add a batch
+ *   CSV::rows($row);
+ *   // Add per each
+ *   CSV::row(['id'=>'3', 'name'=>'CJ/Carl Jason']);
+ *   CSV::output('File Name');
  */
 class CSV 
 {
