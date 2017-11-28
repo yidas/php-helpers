@@ -1,0 +1,31 @@
+<?php
+namespace yidas\helpers;
+/**
+ * Variable Helper
+ *
+ * @author  Nick Tsai <myintaer@gmail.com>
+ * @version 1.0.0
+ * @see     https://github.com/yidas/php-helpers
+ * @example 
+ *  ArrayHelper::indexBy($modelData, 'sn');
+ */
+class VarHelper
+{
+    /**
+     * Check giving two variables are refered each other
+     *
+     * @param array $array Array data for handling
+     * @param string $key  Array key for index key
+     * @return array Result with indexBy Key
+     */
+    public static function isEqualReferences(&$first, &$second){
+        if($first !== $second){
+            return false;
+        } 
+        $tmpValue = $first;
+        $first = ($first === true) ? false : true; 
+        $result = ($first === $second);
+        $first = $tmpValue; 
+        return $result;
+    }
+}
