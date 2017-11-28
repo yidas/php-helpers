@@ -14,9 +14,9 @@ class VarHelper
     /**
      * Check giving two variables are refered each other
      *
-     * @param array $array Array data for handling
-     * @param string $key  Array key for index key
-     * @return array Result with indexBy Key
+     * @param mixed &$first First variable
+     * @param mixed &$second Second variable
+     * @return bool Result
      */
     public static function isEqualReferences(&$first, &$second){
         if($first !== $second){
