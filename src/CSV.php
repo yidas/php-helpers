@@ -9,6 +9,9 @@ namespace yidas\helpers;
  * @version 1.0.0
  * @see     https://github.com/yidas/php-helpers
  * @example 
+ *   use yidas\helpers\CSV;
+ *   // Namespace block...
+ *
  *   $rows = [
  *       ['id'=>'1', 'name'=>'Nick,Tsai'],
  *       ['id'=>'2', 'name'=>'John"M"'],
