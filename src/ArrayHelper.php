@@ -18,9 +18,10 @@ class ArrayHelper
      *
      * @param array $array Array data for handling
      * @param string $key  Array key for index key
+     * @param bool $obj2Array Object converts to array if is object
      * @return array Result with indexBy Key
      */
-    public static function indexBy(Array &$array, $key='id')
+    public static function indexBy(Array &$array, $key='id', $obj2Array=false)
     {
         $tmp = [];
 
@@ -28,7 +29,7 @@ class ArrayHelper
 
             if (is_object($row) && isset($row->$key)) {
                 
-                $tmp[$row->$key] = $row;
+                $tmp[$row->$key] = ($obj2Array) ? (array)$row : $row;
 
             } 
             elseif (is_array($row) && isset($row[$key])) {
